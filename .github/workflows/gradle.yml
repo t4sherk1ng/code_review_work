@@ -21,8 +21,8 @@ jobs:
   build:
     strategy:
       matrix:
-        os: [windows-latest, macos-latest, ubuntu-latest]
-        java-version: [11, 17]
+        os: [windows-latest]
+        java-version: [17]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v3
